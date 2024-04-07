@@ -1,4 +1,4 @@
-# Assignment 2 - The Simon Memory Game
+# The Simon Memory Game
 
 A goal of this assignment is to develop the Simon electronic memory skil game, invented in 1978 by Ralph H. Baer and Howard J. Morrison.
 
