@@ -5,10 +5,10 @@ This repo is dedicated to a module CS230 Web Information Processing which I took
 Each week a certain topic is discussed and an individual assignment is given on average every second week.
 
 The overview of this module can be summarized as followed:
-- lab 01 - [HTML, CSS, JavaScript](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_01)
-- lab 02 - [HTML, CSS, JavaScript](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_02)
-- lab 03 - [HTML, CSS, JavaScript](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_03)
-- lab 04 - [HTML, CSS, JavaScript, Express, MySQL, jQuery, AJAX, REST](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_04)
+- [lab 01](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_01) - HTML, CSS, JavaScript
+- [lab 02](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_02) - HTML, CSS, JavaScript
+- [lab 03](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_03) - HTML, CSS, JavaScript
+- [lab 04](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_04) - HTML, CSS, JavaScript, Express, MySQL, jQuery, AJAX, REST
 
 
 
