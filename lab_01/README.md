@@ -6,4 +6,4 @@ More information in the PDF file CS230 - Assignment 1.
 
 Result:
 
-<img width="633" alt="Food Pyramid" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/5e8248cc-b6a5-4e3d-9ade-a6f5a8681397">
+<img width="633" alt="Food Pyramid" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/0cffd608-2360-4753-9c6d-26f1e15f5b41">
