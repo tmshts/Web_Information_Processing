@@ -2,10 +2,10 @@ let mysql = require("mysql");
 
 // set up database connection for ingesting data
 let con = mysql.createConnection({
-    host: "webcourse.cs.nuim.ie",
-    user: "u240829",
-    password: "diighahxi7Pee2ed",
-    database: "cs230_u240829"
+    host: "",
+    user: "",
+    password: "",
+    database: ""
 });
 
 /////// YOU CAN RUN THIS APP ONLY ONCE BECAUSE I SET COLUMNS mobile and email UNIQUE, and hard-crafted foreign keys -> not possible to add same hard-crafted data //////////
