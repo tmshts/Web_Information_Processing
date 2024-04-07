@@ -145,10 +145,10 @@ let mysql2 = require("mysql2/promise");
 // create connection with database USERS
 // createPool method reduce time spent connecting to the MySQL and not necessary to close => improvement of mysql
 let pool = mysql2.createPool({
-    host: "webcourse.cs.nuim.ie",
-    user: "u240829",
-    password: "diighahxi7Pee2ed",
-    database: "cs230_u240829"
+    host: "",
+    user: "",
+    password: "",
+    database: ""
 })
 
 module.exports = pool
