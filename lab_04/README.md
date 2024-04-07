@@ -20,7 +20,7 @@ $ npm install express
 $ npm start
 ```
 
-More information in the PDF CS230 - Assignment 4.
+More information in the PDF file CS230 - Assignment 4.
 
 Result:
 
