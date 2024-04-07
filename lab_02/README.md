@@ -12,4 +12,4 @@ More information in the PDF file CS230 - Assignment 2.
 
 ### Result:
 
-<img width="433" alt="Memory Game" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/16fa569b-04f2-45f4-909a-0b07d9e4fe91">
+<img width="333" alt="Memory Game" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/16fa569b-04f2-45f4-909a-0b07d9e4fe91">
