@@ -2,7 +2,7 @@
 
 This repo is dedicated to a module CS230 Web Information Processing which I took during my Exchange semester 2024 at the Maynooth University in Ireland.
 
-Each week a certain topic is discussed and an individual assignment is given on average every second week.
+Each week is discussed a certain topic and an individual assignment is given on average every second week.
 
 The overview of this module can be summarized as followed:
 - [lab 01](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_01) - HTML, CSS, JavaScript
