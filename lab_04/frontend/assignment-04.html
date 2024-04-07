@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Users Database</title>
+        <link rel="stylesheet" href="./assignment-04.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./assignment-04.js"></script>
+    </head>
+    <body>
+    
+        <div class="header_search"><input type="text" placeholder="Search by surname" id="search"></div>
+        <div class="outer_options"><div id="options"></div></div>
+
+        <div class="notification_success_update"></div>
+        <div class="notification_error_update"></div>
+
+        <div class="notification_success_delete"></div>
+
+        <!-- handle form for update user -->
+        <div class="div_form_update" style="display: none;">
+            
+            <form id="form_update_user" action="./index.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Personal Information</b> <br><br>
+
+                        <label for="ftitle_update">Title:</label><br>
+                        <select name="ftitle_update" id="ftitle_update">
+                            <option value="">-</option>
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Other">Other</option>
+                        </select><br><br>
+
+                        <label for="ffirst_name_update">First Name(s)<span>&#42;</span>:</label><br>
+                        <input type="text" id="ffirst_name_update" name="ffirst_name_update" disabled required><br><br>
+
+                        <label for="fsurname_update">Surname<span>&#42;</span>:</label><br>
+                        <input type="text" id="fsurname_update" name="fsurname_update" disabled required><br><br>
+
+                        <label for="fmobile_update">Mobile<span>&#42;</span>:</label><br>
+                        <input type="text" id="fmobile_update" name="fmobile_update" value="88" required><br><br>
+
+                        <label for="femail_update">Email Address<span>&#42;</span>:</label><br>
+                        <input type="text" id="femail_update" name="femail_update" required><br>
+                    </div>
+
+                    <div>
+                        <b>Home Address</b> <br><br>
+
+                        <label for="faddress1_home_update">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="faddress1_home_update" name="faddress1_home_update" required><br><br>
+
+                        <label for="faddress2_home_update">Address Line 2:</label><br>
+                        <input type="text" id="faddress2_home_update" name="faddress2_home_update"><br><br>
+
+                        <label for="ftown_home_update">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="ftown_home_update" name="ftown_home_update" required><br><br>
+
+                        <label for="fcity_home_update">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="fcity_home_update" name="fcity_home_update" required><br><br>
+
+                        <label for="feircode_home_update">Eircode:</label><br>
+                        <input type="text" id="feircode_home_update" name="feircode_home_update"><br>
+                    </div>
+
+                    <div>
+                        <b>Shipping Address</b> <br><br>
+
+                        <label for="faddress1_shipping_update">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="faddress1_shipping_update" name="faddress1_shipping_update" required><br><br>
+
+                        <label for="faddress2_shipping_update">Address Line 2:</label><br>
+                        <input type="text" id="faddress2_shipping_update" name="faddress2_shipping_update"><br><br>
+
+                        <label for="ftown_shipping_update">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="ftown_shipping_update" name="ftown_shipping_update" required><br><br>
+
+                        <label for="fcity_shipping_update">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="fcity_shipping_update" name="fcity_shipping_update" required><br><br>
+
+                        <label for="feircode_shipping_update">Eircode:</label><br>
+                        <input type="text" id="feircode_shipping_update" name="feircode_shipping_update"><br><br>
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_update" value="Update">
+                <button type="button" class="btn_cancel_update" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+
+        <br>
+
+        <button class="btn_add_new_user" style="display: block;">Add New User</button>
+
+        <br>
+
+        <div class="notification_success"></div>
+        <div class="notification_error"></div>
+
+        <!-- handle form for add user -->
+        <div class="div_form" style="display: none;">
+            
+            <form id="form_add_new_user" action="./index.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Personal Information</b> <br><br>
+
+                        <label for="ftitle">Title:</label><br>
+                        <select name="ftitle" id="ftitle">
+                            <option value="">-</option>
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Other">Other</option>
+                        </select><br><br>
+
+                        <label for="ffirst_name">First Name(s)<span>&#42;</span>:</label><br>
+                        <input type="text" id="ffirst_name" name="ffirst_name" required><br><br>
+
+                        <label for="fsurname">Surname<span>&#42;</span>:</label><br>
+                        <input type="text" id="fsurname" name="fsurname" required><br><br>
+
+                        <label for="fmobile">Mobile<span>&#42;</span>:</label><br>
+                        <input type="text" id="fmobile" name="fmobile" required><br><br>
+
+                        <label for="femail">Email Address<span>&#42;</span>:</label><br>
+                        <input type="text" id="femail" name="femail" required><br>
+                    </div>
+
+                    <div>
+                        <b>Home Address</b> <br><br>
+
+                        <label for="faddress1_home">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="faddress1_home" name="faddress1_home" required><br><br>
+
+                        <label for="faddress2_home">Address Line 2:</label><br>
+                        <input type="text" id="faddress2_home" name="faddress2_home"><br><br>
+
+                        <label for="ftown_home">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="ftown_home" name="ftown_home" required><br><br>
+
+                        <label for="fcity_home">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="fcity_home" name="fcity_home" required><br><br>
+
+                        <label for="feircode_home">Eircode:</label><br>
+                        <input type="text" id="feircode_home" name="feircode_home"><br>
+                    </div>
+
+                    <div>
+                        <b>Shipping Address</b> <br><br>
+
+                        <label for="faddress1_shipping">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="faddress1_shipping" name="faddress1_shipping" required><br><br>
+
+                        <label for="faddress2_shipping">Address Line 2:</label><br>
+                        <input type="text" id="faddress2_shipping" name="faddress2_shipping"><br><br>
+
+                        <label for="ftown_shipping">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="ftown_shipping" name="ftown_shipping" required><br><br>
+
+                        <label for="fcity_shipping">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="fcity_shipping" name="fcity_shipping" required><br><br>
+
+                        <label for="feircode_shipping">Eircode:</label><br>
+                        <input type="text" id="feircode_shipping" name="feircode_shipping"><br><br>
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add" value="Add">
+                <button type="button" class="btn_cancel" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+        
+        <h3>Complete Users Database</h3>
+        <table class="table">
+            <thead class="theaders"></thead>
+            <tbody class="tbody"></tbody>
+        </table>
+
+
+    </body>
+</html>

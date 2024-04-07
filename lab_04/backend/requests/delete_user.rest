@@ -1,0 +1,9 @@
+DELETE http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+    "first_name": "Martin",
+    "surname": "Smith",
+    "mobile": "0000",
+    "email": "martin.smith@gmail.com"
+}

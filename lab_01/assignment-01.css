@@ -1,0 +1,242 @@
+.container {
+    text-align: center;
+  }
+
+.level_1{
+    border-bottom: 150px solid red;
+	border-left: 90px solid transparent;
+	border-right: 90px solid transparent;
+    height: 0;
+    width: 0px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: white;
+    display: flex;
+    justify-content: center
+  }
+
+.level_1:hover #inside_level_1 .container_for_circle .circle_button{
+    display: block;
+}
+
+#inside_inside_level_1 {
+    width: 105px;
+    height: 40px;
+    margin-top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.level_1_2{
+    border-bottom: 10px solid white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 140px;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.level_2 {
+    border-bottom: 50px solid orange;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 190px;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.level_2:hover #inside_level_2 .container_for_circle .circle_button{
+    display: block;
+}
+
+#inside_level_2{
+    width: 110px;
+    height: 40px;
+    margin-top: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.level_2_3{
+    border-bottom: 10px solid white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 200px;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.level_3 {
+    border-bottom: 50px solid yellow;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 250px;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.level_3:hover #inside_level_3 .container_for_circle .circle_button{
+    display: block;
+}
+
+#inside_level_3{
+    width: 110px;
+    height: 40px;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.level_4 {
+    border-bottom: 50px solid blue;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 300px;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.level_4:hover #inside_level_4 .container_for_circle .circle_button{
+    display: block;
+}
+
+#inside_level_4{
+    width: 110px;
+    height: 40px;
+    margin-top: 16.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.level_5 {
+      border-bottom: 50px solid brown;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 350px;
+      margin-right:auto;
+      margin-left:auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.level_5:hover #inside_level_5 .container_for_circle .circle_button{
+    display: block;
+}
+
+#inside_level_5{
+    width: 110px;
+    height: 40px;
+    margin-top: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.level_6 {
+      border-bottom: 50px solid green;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 400px;
+      margin-right:auto;
+      margin-left:auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+.level_6:hover #inside_level_6 .container_for_circle .circle_button{
+    display: block;
+}
+
+#inside_level_6{
+    width: 110px;
+    height: 40px;
+    margin-top: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_for_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle
+{
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 1px solid black;
+    color: white;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle_button
+{
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 1px solid black;
+    color: white;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.btn_circle {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: large;
+    display: block;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bolder;
+}

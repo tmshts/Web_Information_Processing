@@ -1,0 +1,20 @@
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+    "title": "",
+    "first_name": "tom",
+    "surname": "jerry",
+    "mobile": "488789",
+    "email": "jery@mu.ie",
+    "home_address_1": "castle 1",
+    //"home_address_2": "dawson 15",
+    "home_town": "maynooth",
+    "home_city": "maynooth",
+    "home_eircode": "YS78SE",
+    "shipping_address_1": "castle 1",
+    //"shipping_address_2": "dawson 15",
+    "shipping_town": "maynooth",
+    "shipping_city": "maynooth",
+    "shipping_eircode": "YS78SE"
+}

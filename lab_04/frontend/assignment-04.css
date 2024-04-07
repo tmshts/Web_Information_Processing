@@ -1,0 +1,182 @@
+h3 {
+    text-align: center;
+    background-color: #D8D0CD;
+    color: #C83F5F;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.theaders {
+    background-color: #C83F5F;
+    color: #D8D0CD;
+    border: 2px solid black;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #D8D0CD;
+}
+
+.options_row_long {
+    width: 150px;
+}
+
+.options_row_short {
+    width: 50px;
+}
+
+.outer_options {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#search {
+    width: 250px;
+    height: 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border: none;
+}
+
+#search:focus {
+    border: 3px solid #D8D0CD;
+    outline: none;
+}
+
+.header_search {
+    background-color: #c83f5f;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn_add_new_user {
+    background-color: #B46543;
+    border: none;
+    border-radius: 10px;
+    color: #D8D0CD;
+    padding: 8px;
+    cursor: pointer;
+    width: 150px;
+    font-size: medium;
+}
+
+.btn_cancel, .btn_cancel_update {
+    background-color: #B46543;
+    border: none;
+    border-radius: 10px;
+    color: #D8D0CD;
+    padding: 8px;
+    cursor: pointer;
+    width: 70px;
+}
+
+.btn_add, .btn_add_update {
+    background-color: #c83f5f;
+    border: none;
+    border-radius: 10px;
+    color: #D8D0CD;
+    padding: 8px;
+    cursor: pointer;
+    width: 70px;
+}
+
+.btn_update {
+    background-color: #c83f5f;
+    color: #D8D0CD;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    font-size: medium;
+}
+
+.btn_delete {
+    background-color: #B46543;
+    color: #D8D0CD;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    font-size: medium;
+}
+
+input[type=text] {
+    border: 3px solid #D8D0CD;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #DF5587;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+}
+
+select {
+    border: 3px solid #D8D0CD;
+    border-radius: 10px;
+    width: 160px;
+    border-radius: 10px;
+    font-size: medium;
+    margin-top: 5px;
+}
+
+.notification_error, .notification_error_update {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+    display: none;
+}
+
+.notification_success, .notification_success_update, .notification_success_delete {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+    display: none;
+}
+
+.blank_row
+{
+    height: 15px !important;
+}

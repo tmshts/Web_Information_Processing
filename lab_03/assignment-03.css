@@ -1,0 +1,67 @@
+.theaders {
+    background-color: darkgray;
+    border: 2px solid black;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+.left_aligned_column {
+    text-align: left;
+}
+
+.number_column {
+    text-align: center;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.grade_average {
+    text-align: right;
+    background-color: red;
+    color: white;
+}
+
+.changeable_numbers:empty {
+    background: yellow;
+    text-align: center;
+}
+
+.changeable_numbers {
+    text-align: right;
+}
+
+.changeable_numbers[placeholder]:empty:before {
+    content: attr(placeholder);
+    text-align: center;
+}
+
+.changeable_numbers[placeholder]:empty:focus:before {
+    content: "";
+}
+
+.count_assignments {
+    margin: 10px 0 10px 0
+}
+
+input[type=submit], button {
+    border: 1px black solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type=text], button {
+    border: 1px black solid;
+    border-radius: 5px;
+}

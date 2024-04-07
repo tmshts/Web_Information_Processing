@@ -1,0 +1,20 @@
+PUT http://localhost:8000/api/users/user/2
+Content-Type: application/json
+
+{
+    "title": "Mr",
+    //"first_name": "Tomas",
+    //"surname": "Hatas",
+    "mobile": "53456",
+    "email": "hatas@mail.com",
+    "home_address_1": "home 1",
+    //"home_address_2": "dawson 15",
+    "home_town": "limerick home",
+    "home_city": "limerick home",
+    //"home_eircode": "69",
+    "shipping_address_1": "shipping 1",
+    //"shipping_address_2": "dawson 15",
+    "shipping_town": "limerick shipping",
+    "shipping_city": "limerick shippin"
+    //"shipping_eircode": "YS78SE",
+}

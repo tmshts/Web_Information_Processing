@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Grades Table</title>
+        <link rel="stylesheet" href="./assignment-03.css">
+        <script src="./assignment-03.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+    
+    <table class="table">
+
+        <thead class="theaders">
+
+        </thead>
+
+        <tbody class="tbody">
+
+        </tbody>
+
+    </table>
+
+    <div class="count_assignments">Number of assignments that have not yet been submitted: <b class="number_no_assignments"></b></div>
+
+    <form id="form_student">
+        <input type="text" required="true" id="input_student" placeholder="Enter Student Name">
+        <input type="submit" value="Add Student">
+    </form>
+
+    <form id="form_assignment">
+        <input type="submit" value="Add New Column For Assignment">
+    </form>
+
+    <button class="save_state">Save table</button>
+    <button class="restore_state">Restore table</button>
+
+
+
+    </body>
+</html>

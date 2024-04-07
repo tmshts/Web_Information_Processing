@@ -1,0 +1,214 @@
+.container {
+    text-align: center;
+  }
+
+.container_green_circle {
+    background-color: transparent;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green_circle {
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin-top: 240px;
+    margin-left: -180px;
+    position: absolute; /* relative not working */
+}
+
+#green_circle_btn {
+    height: 120px;
+    width: 120px;
+    background-color:green;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@keyframes flash {
+    0% { background: black;}
+}
+
+.container_red_circle {
+    background-color: transparent;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red_circle {
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin-top: 240px;
+    margin-right: -180px;
+    position: absolute; /* relative not working */
+}
+
+#red_circle_btn {
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.container_yellow_circle {
+    background-color: transparent;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow_circle {
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin-top: 670px;
+    margin-left: -180px;
+    position: absolute; /* relative not working */
+}
+
+#yellow_circle_btn {
+    height: 120px;
+    width: 120px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.container_blue_circle {
+    background-color: transparent;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue_circle {
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin-top: 670px;
+    margin-right: -180px;
+    position: absolute; /* relative not working */
+}
+
+#blue_circle_btn {
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.red_green {
+    background-color: red;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.black_circle {
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inside_black_circle_1 {
+    width: 100%;
+    height: 50px;
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#inside_black_circle_2 {
+    width: 100%;
+    height: 40px;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.container_for_black_circle_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start_btn {
+    height: 35px;
+    width: 90px;
+    border-radius: 2px;
+    background-color: silver;
+    border: 1px solid transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Orbitron";
+    font-size: large;
+}
+
+.number_left {
+    background-color: silver;
+    margin-right: 5px;
+    border-radius: 2px;
+    width: 40px;
+    height: 35px;
+    font-family: "Orbitron";
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number_right {
+    background-color: silver;
+    margin-left: 5px;
+    border-radius: 2px;
+    width: 40px;
+    height: 35px;
+    font-family: "Orbitron";
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
