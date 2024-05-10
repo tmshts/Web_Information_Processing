@@ -1,18 +1,23 @@
 # Database for personal details for users
 
-A goal of this assignment is to develop a database of personal details for users
-of a hypothetical online store.
+A goal of this assignment is to develop an online mobile phone store maintaining a database of:
+- personal details for customers including home and shipping addresses
+- item details
+- order details
+
 
 ## How to run this application
 
 ```bash
 # Install dependencies
 $ npm install
-$ npm install mysql
-$ npm install mysql2
+$ npm install mongodb
+$ npm install mongoose
 $ npm install -g nodemon
 $ npm install cors
 $ npm install express
+$ npm install dotenv
+$ npm install --save mongoose-unique-validator
 ```
 
 ```bash
@@ -27,11 +32,15 @@ More information in the PDF file CS230 - Assignment 4.
 2. CSS
 3. JavaScript
 4. Express
-5. MySQL
+5. mongoDB
 6. jQuery
 7. AJAX
 8. REST API
 
 ### Result:
 
-<img width="1033" alt="database" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/1b444aeb-d655-428e-811a-cf656d560262">
+<img width="1436" alt="users" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/f5246fb6-d2d2-4168-a805-424aeb185402">
+
+<img width="1436" alt="items" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/f5246fb6-d2d2-4168-a805-424aeb185402">
+
+<img width="1436" alt="orders" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/f5246fb6-d2d2-4168-a805-424aeb185402">
