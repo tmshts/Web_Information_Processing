@@ -28,14 +28,15 @@ $ npm start
 More information in the PDF file CS230 - Assignment 5.
 
 ### Used:
-1. HTML
-2. CSS
-3. JavaScript
-4. Express
-5. mongoDB
-6. jQuery
-7. AJAX
-8. REST API
+1. Node.JS
+2. HTML
+3. CSS
+4. JavaScript
+5. Express
+6. mongoDB
+7. jQuery
+8. AJAX
+9. REST API
 
 ### Result:
 

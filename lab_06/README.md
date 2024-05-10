@@ -24,9 +24,8 @@ $ npm start
 More information in the PDF file CS230 - Updated Assignment 6.
 
 ### Used:
-1. HTML
-2. CSS
-3. JavaScript
-4. Express
-5. mongoDB
-6. REST API
+1. Node.JS
+2. JavaScript
+3. Express
+4. mongoDB
+5. REST API
