@@ -1,4 +1,4 @@
-# Database for personal details for users
+# Database for a hypothetical online store
 
 A goal of this assignment is to develop a database of personal details for users
 of a hypothetical online store.
