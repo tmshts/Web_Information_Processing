@@ -9,6 +9,7 @@ The overview of this module can be summarized as followed:
 - [lab 02](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_02) - HTML, CSS, JavaScript
 - [lab 03](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_03) - HTML, CSS, JavaScript
 - [lab 04](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_04) - HTML, CSS, JavaScript, Express, MySQL, jQuery, AJAX, REST API
+- [lab 05](https://github.com/tmshts/Web_Information_Processing/tree/main/lab_05) - HTML, CSS, JavaScript, Express, mongoDB, jQuery, AJAX, REST API
 
 
 

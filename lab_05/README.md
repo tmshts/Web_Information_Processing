@@ -1,4 +1,4 @@
-# Database for personal, item and order details
+# Database for an online mobile phone store
 
 A goal of this assignment is to develop an online mobile phone store maintaining a database of:
 - personal details for customers including home and shipping addresses
