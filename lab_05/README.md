@@ -42,7 +42,6 @@ More information in the PDF file CS230 - Assignment 5.
 
 <img width="1436" alt="users" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/f5246fb6-d2d2-4168-a805-424aeb185402">
 
-<img width="1436" alt="items" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/635b5f3c-0d91-48a7-8ecf-9ad961036aa8">
-
+<img width="1436" alt="items" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/69ac3367-14d3-43b5-afdf-85fd812462bc">
 
 <img width="1436" alt="orders" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/44ba0c59-b6c0-4849-9d55-084676fd5a8d">
