@@ -28,7 +28,7 @@ $ npm start
 More information in the PDF file CS230 - Assignment 5.
 
 ### Used:
-1. Node.JS
+1. Node.js
 2. HTML
 3. CSS
 4. JavaScript
