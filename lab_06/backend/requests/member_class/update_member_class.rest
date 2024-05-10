@@ -1,0 +1,17 @@
+PUT http://localhost:8000/api/members_classes/member_class/1
+Content-Type: application/json
+
+{
+    "member_ID": "6638bb38cd959ae44e09175c",
+    "taken_classes": [
+        {
+            "class_ID": "6638bb4dcd959ae44e091764"
+        },
+        {
+            "class_ID": "6638bb50cd959ae44e091768"
+        },
+        {
+            "class_ID": "6638bb57cd959ae44e09176e"
+        }
+    ]
+}

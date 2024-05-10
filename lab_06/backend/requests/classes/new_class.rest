@@ -1,0 +1,10 @@
+POST http://localhost:8000/api/classes
+Content-Type: application/json
+
+{
+    "name": "jumping",
+    "day": "Sunday",
+    "session_length": 2,
+    "price": 30,
+    "number_of_members": 0
+}

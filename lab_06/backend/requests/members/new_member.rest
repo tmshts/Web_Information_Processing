@@ -1,0 +1,10 @@
+POST http://localhost:8000/api/members
+Content-Type: application/json
+
+{
+    "title": "Mr",
+    "first_name": "Petr",
+    "surname": "Levy",
+    "email": "petr.levy@gmail.com",
+    "premium_membership": true
+}
