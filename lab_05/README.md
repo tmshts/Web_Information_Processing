@@ -40,7 +40,7 @@ More information in the PDF file CS230 - Assignment 5.
 
 ### Result:
 
-<img width="1436" alt="users" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/f5246fb6-d2d2-4168-a805-424aeb185402">
+<img width="1436" alt="users" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/71c71622-d41a-4c85-a470-50b2351575eb">
 
 <img width="1436" alt="items" src="https://github.com/tmshts/Web_Information_Processing/assets/74012536/69ac3367-14d3-43b5-afdf-85fd812462bc">
 
