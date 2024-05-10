@@ -21,7 +21,7 @@ $ npm install express
 $ npm start
 ```
 
-More information in the PDF file CS230 - Assignment 4.
+More information in the PDF file CS230 - Updated Assignment 6.
 
 ### Used:
 1. HTML

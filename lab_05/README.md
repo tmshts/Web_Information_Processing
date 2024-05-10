@@ -25,7 +25,7 @@ $ npm install --save mongoose-unique-validator
 $ npm start
 ```
 
-More information in the PDF file CS230 - Assignment 4.
+More information in the PDF file CS230 - Assignment 5.
 
 ### Used:
 1. HTML
