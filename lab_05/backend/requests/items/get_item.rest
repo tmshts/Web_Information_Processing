@@ -1,0 +1,1 @@
+GET http://localhost:8000/api/items/item/661e50d359f6f495040e16fa

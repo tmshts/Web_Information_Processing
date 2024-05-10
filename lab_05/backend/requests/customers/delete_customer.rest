@@ -1,0 +1,1 @@
+DELETE http://localhost:8000/api/customers/customer/661baf4b1e35e154c929c792

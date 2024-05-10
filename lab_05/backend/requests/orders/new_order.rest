@@ -1,0 +1,16 @@
+POST http://localhost:8000/api/orders
+Content-Type: application/json
+
+{
+    "customer_id": "661e66403b46e2d24a27ebb3",
+    "bought_items": [
+        {
+            "item_id": "661e66503b46e2d24a27ebb8",
+            "quantity": 2
+        },
+        {
+            "item_id": "661e665b3b46e2d24a27ebbc",
+            "quantity": 1
+        }
+    ]
+}

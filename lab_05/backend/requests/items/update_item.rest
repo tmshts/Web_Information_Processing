@@ -1,0 +1,8 @@
+PUT http://localhost:8000/api/items/item/661e67426bcf1eb47df7b04f
+Content-Type: application/json
+
+{
+    "manufacturer": "Apple",
+    "model": "iPhone 7",
+    "price": 30
+}

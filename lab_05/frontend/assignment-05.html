@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store Database</title>
+        <link rel="stylesheet" href="./assignment-05.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./assignment-05.js"></script>
+    </head>
+    <body>
+    
+
+        <!-- CUSTOMER BLOCK -->
+
+        <div class="header_search_customer"><input type="text" placeholder="Search by surname" id="search_customer"></div>
+        <div class="outer_options_customer"><div id="options_customer"></div></div>
+
+        <div class="notification_success_delete_customer"></div>
+
+        <!-- handle form for update user -->
+        <div class="div_form_update_customer" style="display: none;">
+            
+            <form id="form_update_customer" action="./assignment-05.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Personal Information</b> <br><br>
+
+                        <label for="customer_ftitle_update">Title:</label><br>
+                        <select name="customer_ftitle_update" id="customer_ftitle_update">
+                            <option value="">-</option>
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Other">Other</option>
+                        </select><br><br>
+
+                        <label for="customer_ffirst_name_update">First Name(s)<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_ffirst_name_update" name="customer_ffirst_name_update" disabled required><br><br>
+
+                        <label for="customer_fsurname_update">Surname<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fsurname_update" name="customer_fsurname_update" disabled required><br><br>
+
+                        <label for="customer_fmobile_update">Mobile<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fmobile_update" name="customer_fmobile_update" value="88" required><br><br>
+
+                        <label for="customer_femail_update">Email Address<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_femail_update" name="customer_femail_update" required><br>
+                    </div>
+
+                    <div>
+                        <b>Home Address</b> <br><br>
+
+                        <label for="customer_faddress1_home_update">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_faddress1_home_update" name="customer_faddress1_home_update" required><br><br>
+
+                        <label for="customer_faddress2_home_update">Address Line 2:</label><br>
+                        <input type="text" id="customer_faddress2_home_update" name="customer_faddress2_home_update"><br><br>
+
+                        <label for="customer_ftown_home_update">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_ftown_home_update" name="customer_ftown_home_update" required><br><br>
+
+                        <label for="customer_fcity_home_update">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fcity_home_update" name="customer_fcity_home_update" required><br><br>
+
+                        <label for="customer_feircode_home_update">Eircode:</label><br>
+                        <input type="text" id="customer_feircode_home_update" name="customer_feircode_home_update"><br>
+                    </div>
+
+                    <div>
+                        <b>Shipping Address</b> <br><br>
+
+                        <label for="customer_faddress1_shipping_update">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_faddress1_shipping_update" name="customer_faddress1_shipping_update" required><br><br>
+
+                        <label for="customer_faddress2_shipping_update">Address Line 2:</label><br>
+                        <input type="text" id="customer_faddress2_shipping_update" name="customer_faddress2_shipping_update"><br><br>
+
+                        <label for="customer_ftown_shipping_update">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_ftown_shipping_update" name="customer_ftown_shipping_update" required><br><br>
+
+                        <label for="customer_fcity_shipping_update">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fcity_shipping_update" name="customer_fcity_shipping_update" required><br><br>
+
+                        <label for="customer_feircode_shipping_update">Eircode:</label><br>
+                        <input type="text" id="customer_feircode_shipping_update" name="customer_feircode_shipping_update"><br><br>
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_update_customer" value="Update">
+                <button type="button" class="btn_cancel_update_customer" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+
+        <div class="notification_success_update_customer"></div>
+        <div class="notification_error_update_customer"></div>
+
+        <br>
+
+        <button class="btn_add_new_customer" style="display: block;">Add New Customer</button>
+
+        <br>
+
+
+        <!-- handle form for add user -->
+        <div class="div_form_customer" style="display: none;">
+            
+            <form id="form_add_new_customer" action="./assignment-05.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Personal Information</b> <br><br>
+
+                        <label for="customer_ftitle">Title:</label><br>
+                        <select name="customer_ftitle" id="customer_ftitle">
+                            <option value="">-</option>
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Other">Other</option>
+                        </select><br><br>
+
+                        <label for="customer_ffirst_name">First Name(s)<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_ffirst_name" name="customer_ffirst_name" required><br><br>
+
+                        <label for="customer_fsurname">Surname<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fsurname" name="customer_fsurname" required><br><br>
+
+                        <label for="customer_fmobile">Mobile<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fmobile" name="customer_fmobile" required><br><br>
+
+                        <label for="customer_femail">Email Address<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_femail" name="customer_femail" required><br>
+                    </div>
+
+                    <div>
+                        <b>Home Address</b> <br><br>
+
+                        <label for="customer_faddress1_home">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_faddress1_home" name="customer_faddress1_home" required><br><br>
+                        
+                        <label for="customer_faddress2_home">Address Line 2:</label><br>
+                        <input type="text" id="customer_faddress2_home" name="customer_faddress2_home"><br><br>
+
+                        <label for="customer_ftown_home">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_ftown_home" name="customer_ftown_home" required><br><br>
+
+                        <label for="customer_fcity_home">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fcity_home" name="customer_fcity_home" required><br><br>
+
+                        <label for="customer_feircode_home">Eircode:</label><br>
+                        <input type="text" id="customer_feircode_home" name="customer_feircode_home"><br>
+                    </div>
+
+                    <div>
+                        <b>Shipping Address</b> <br><br>
+
+                        <label for="customer_faddress1_shipping">Address Line 1<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_faddress1_shipping" name="customer_faddress1_shipping" required><br><br>
+
+                        <label for="customer_faddress2_shipping">Address Line 2:</label><br>
+                        <input type="text" id="customer_faddress2_shipping" name="customer_faddress2_shipping"><br><br>
+
+                        <label for="customer_ftown_shipping">Town<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_ftown_shipping" name="customer_ftown_shipping" required><br><br>
+
+                        <label for="customer_fcity_shipping">Countr/City<span>&#42;</span>:</label><br>
+                        <input type="text" id="customer_fcity_shipping" name="customer_fcity_shipping" required><br><br>
+
+                        <label for="customer_feircode_shipping">Eircode:</label><br>
+                        <input type="text" id="customer_feircode_shipping" name="customer_feircode_shipping"><br><br>
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_customer" value="Add">
+                <button type="button" class="btn_cancel_customer" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+    
+
+        <div class="notification_success_customer"></div>
+        <div class="notification_error_customer"></div>
+
+
+
+        <br>
+
+        <!-- ITEM BLOCK -->
+
+
+        <div class="header_search_item"><input type="text" placeholder="Search by model" id="search_item"></div>
+        <div class="outer_options_item"><div id="options_item"></div></div>
+
+        <div class="notification_success_delete_item"></div>
+
+        <!-- handle form for update item -->
+        <div class="div_form_update_item" style="display: none;">
+            
+            <form id="form_update_item" action="./assignment-05.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Item Information</b> <br><br>
+
+                        <label for="item_fmanufacturer_update">Manufacturer<span>&#42;</span>:</label><br>
+                        <input type="text" id="item_fmanufacturer_update" name="item_fmanufacturer_update" required><br><br>
+
+                        <label for="item_fmodel_update">Model<span>&#42;</span>:</label><br>
+                        <input type="text" id="item_fmodel_update" name="item_fmodel_update" required><br><br>
+
+                        <label for="item_fprice_update">Price<span>&#42;</span>:</label><br>
+                        <input type="number" id="item_fprice_update" name="item_fprice_update" required><br><br>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_update_item" value="Update">
+                <button type="button" class="btn_cancel_update_item" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+
+        <div class="notification_success_update_item"></div>
+        <div class="notification_error_update_item"></div>
+
+        <br>
+
+        <button class="btn_add_new_item" style="display: block;">Add New Item</button>
+
+        <br>
+
+
+        <!-- handle form for add item -->
+        <div class="div_form_item" style="display: none;">
+            
+            <form id="form_add_new_item" action="./assignment-05.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Item Information</b> <br><br>
+
+                        <label for="item_fmanufacturer">Manufacturer<span>&#42;</span>:</label><br>
+                        <input type="text" id="item_fmanufacturer" name="item_fmanufacturer" required><br><br>
+
+                        <label for="item_fmodel">Model<span>&#42;</span>:</label><br>
+                        <input type="text" id="item_fmodel" name="item_fmodel" required><br><br>
+
+                        <label for="item_fprice">Price<span>&#42;</span>:</label><br>
+                        <input type="number" id="item_fprice" name="item_fprice" required><br><br>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_item" value="Add">
+                <button type="button" class="btn_cancel_item" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+    
+
+        <div class="notification_success_item"></div>
+        <div class="notification_error_item"></div>
+
+
+        <br>
+
+
+
+        <!-- ORDER BLOCK -->
+
+
+
+        <div class="header_search_order"><input type="text" placeholder="Search by Order ID" id="search_order"></div>
+        <div class="outer_options_order">
+            <div id="options_order"></div>
+            <span id="options_order_items"></span>
+        </div>
+
+        <div class="notification_success_delete_order"></div>
+
+        <!-- handle form for update order -->
+        <div class="div_form_update_order" style="display: none;">
+            
+            <form id="form_update_order" action="./assignment-05.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Order Information</b> <br><br>
+
+                        <label for="order_fcustoemer_id_update">Customer ID<span>&#42;</span>:</label><br>
+                        <input type="text" id="order_fcustoemer_id_update" name="order_fcustoemer_id_update" disabled required><br><br>
+
+                        <div id="bought_items_update"><b>Bought Items</b></div>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_update_order" value="Update">
+                <button type="button" class="btn_cancel_update_order" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+
+        <div class="notification_success_update_order"></div>
+        <div class="notification_error_update_order"></div>
+
+
+        <br>
+
+        <button class="btn_add_new_order" style="display: block;">Add New Order</button>
+
+        <br>
+
+
+        <!-- handle form for add order -->
+        <div class="div_form_order" style="display: none;">
+            
+            <form id="form_add_new_order" action="./assignment-05.html">
+                <div class="flex-container">
+
+                    <div>
+                        <div><b>Users</b></div>
+                        <div id="users_add"></div>
+
+                        <br>
+
+                        <div id="add_item_button"></div>
+
+                        <div><b>Items</b></div>
+                        <div id="item_cluster"></div>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_order" value="Add">
+                <button type="button" class="btn_cancel_order" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+    
+
+        <div class="notification_success_order"></div>
+        <div class="notification_error_order"></div>
+
+
+        <br>
+
+        <h3>Complete Orders Database</h3>
+        <table class="table">
+            <thead class="theaders"></thead>
+            <tbody class="tbody"></tbody>
+        </table>
+
+
+    </body>
+</html>

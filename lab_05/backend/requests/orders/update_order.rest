@@ -1,0 +1,16 @@
+PUT http://localhost:8000/api/orders/order/6624da59dddff00747e0d1a0
+Content-Type: application/json
+
+{
+    "customer_id": "6624da59dddff00747e0d142",
+    "bought_items": [
+        {
+            "item_id": "6624da59dddff00747e0d175",
+            "quantity": 222
+        },
+        {
+            "item_id": "6624da59dddff00747e0d179",
+            "quantity": 1
+        }
+    ]
+}

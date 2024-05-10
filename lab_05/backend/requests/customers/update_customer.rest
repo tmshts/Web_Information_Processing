@@ -1,0 +1,24 @@
+PUT http://localhost:8000/api/customers/customer/66241b2a6f1b241529d6cba0
+Content-Type: application/json
+
+{
+    "title": "",
+    "first_name": "Tomasss",
+    "surname": "Hatas",
+    "mobile": 534576,
+    "email": "hatass@mail.com",
+    "home_address": {
+        "home_address_line_1": "Castle Dawson 15",
+        "home_address_line_2": "",
+        "home_town": "Maynooth",
+        "home_city": "Maynooth",
+        "home_eircode": "WS43YZ"
+    },
+    "shipping_address": {
+        "shipping_address_line_1": "Castle Dawson 15",
+        "shipping_address_line_2": "",
+        "shipping_town": "Maynooth",
+        "shipping_city": "Maynooth",
+        "shipping_eircode": "WS43YZ"
+    }
+}
