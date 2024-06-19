@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gym Database</title>
+        <link rel="stylesheet" href="./assignment-07.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./assignment-07.js"></script>
+    </head>
+    <body>
+    
+
+        <!-- MEMBER BLOCK -->
+
+        <div class="header_search_member"><input type="text" placeholder="Search by surname" id="search_member"></div>
+        <div class="outer_options_member"><div id="options_member"></div></div>
+
+        <div class="notification_success_delete_member"></div>
+
+        <!-- handle form for update user -->
+        <div class="div_form_update_member" style="display: none;">
+            
+            <form id="form_update_member" action="./assignment-07.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Personal Information</b> <br><br>
+
+                        <label for="member_ftitle_update">Title:</label><br>
+                        <select name="member_ftitle_update" id="member_ftitle_update">
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Other">Other</option>
+                        </select><br><br>
+
+                        <label for="member_ffirst_name_update">First Name(s)<span>&#42;</span>:</label><br>
+                        <input type="text" id="member_ffirst_name_update" name="member_ffirst_name_update" disabled required><br><br>
+
+                        <label for="member_fsurname_update">Surname<span>&#42;</span>:</label><br>
+                        <input type="text" id="member_fsurname_update" name="member_fsurname_update" disabled required><br><br>
+
+                        <label for="member_femail_update">Email Address<span>&#42;</span>:</label><br>
+                        <input type="text" id="member_femail_update" name="member_femail_update" required><br><br>
+
+                        <label for="premium_membership">Please select premium membership:<span>&#42;</span>:</label><br>
+                        <input type="radio" name="premium_membership" id="member_fpremium_membership" value="false">
+                        <label for="member_fpremium_membership">False</label><br>
+                        <input type="radio" name="premium_membership" id="member_fpremium_membership" value="true">
+                        <label for="member_fpremium_membership">True</label><br>
+
+                    </div>
+
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_update_member" value="Update">
+                <button type="button" class="btn_cancel_update_member" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+
+        <div class="notification_success_update_member"></div>
+        <div class="notification_error_update_member"></div>
+
+        <br>
+
+        <button class="btn_add_new_member" style="display: block;">Add New Member</button>
+
+        <br>
+
+
+        <!-- handle form for add member -->
+        <div class="div_form_member" style="display: none;">
+            
+            <form id="form_add_new_member" action="./assignment-07.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Personal Information</b> <br><br>
+
+                        <label for="member_ftitle">Title:</label><br>
+                        <select name="member_ftitle" id="member_ftitle">
+                            <option value="Mx">Mx</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Other">Other</option>
+                        </select><br><br>
+
+                        <label for="member_ffirst_name">First Name(s)<span>&#42;</span>:</label><br>
+                        <input type="text" id="member_ffirst_name" name="member_ffirst_name" required><br><br>
+
+                        <label for="member_fsurname">Surname<span>&#42;</span>:</label><br>
+                        <input type="text" id="member_fsurname" name="member_fsurname" required><br><br>
+
+                        <label for="member_femail">Email Address<span>&#42;</span>:</label><br>
+                        <input type="text" id="member_femail" name="member_femail" required><br><br>
+
+                            <label for="premium_membership">Please select premium membership:<span>&#42;</span>:</label><br>
+                            <input type="radio" name="premium_membership" id="member_fpremium_membership" value="false" checked>
+                            <label for="member_fpremium_membership">False</label><br>
+                            <input type="radio" name="premium_membership" id="member_fpremium_membership" value="true">
+                            <label for="member_fpremium_membership">True</label><br>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_member" value="Add">
+                <button type="button" class="btn_cancel_member" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+    
+
+        <div class="notification_success_member"></div>
+        <div class="notification_error_member"></div>
+
+
+        <br>
+
+        <!-- CLASS BLOCK -->
+
+
+        <div class="header_search_class"><input type="text" placeholder="Search by class name" id="search_class"></div>
+        <div class="outer_options_class"><div id="options_class"></div></div>
+
+        <div class="notification_success_delete_class"></div>
+
+        <!-- handle form for update item -->
+        <div class="div_form_update_class" style="display: none;">
+            
+            <form id="form_update_class" action="./assignment-07.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Class Information</b> <br><br>
+
+                        <label for="class_fname_update">Name<span>&#42;</span>:</label><br>
+                        <input type="text" id="class_fname_update" name="class_fname_update" required><br><br>
+
+                        <label for="class_fday_update">Day<span>&#42;</span>:</label><br>
+                        <input type="text" id="class_fday_update" name="class_fday_update" required><br><br>
+
+                        <label for="class_fsession_length_update">Session Lenght (in hours)<span>&#42;</span>:</label><br>
+                        <input type="number" id="class_fsession_length_update" name="class_fsession_length_update" required><br><br>
+
+                        <label for="class_fprice_update">Price<span>&#42;</span>:</label><br>
+                        <input type="number" id="class_fprice_update" name="class_fprice_update" required><br><br>
+
+                        <label for="class_fnumber_members_update">Number of Members<span>&#42;</span>:</label><br>
+                        <input type="number" id="class_fnumber_members_update" name="class_fnumber_members_update" disabled required><br><br>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_update_class" value="Update">
+                <button type="button" class="btn_cancel_update_class" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+
+        <div class="notification_success_update_class"></div>
+        <div class="notification_error_update_class"></div>
+
+        <br>
+
+        <button class="btn_add_new_class" style="display: block;">Add New Class</button>
+
+        <br>
+
+
+        <!-- handle form for add class -->
+        <div class="div_form_class" style="display: none;">
+            
+            <form id="form_add_new_class" action="./assignment-07.html">
+                <div class="flex-container">
+
+                    <div>
+                        <b>Class Information</b> <br><br>
+
+                        <label for="class_fname">Name<span>&#42;</span>:</label><br>
+                        <input type="text" id="class_fname" name="class_fname" required><br><br>
+
+                        <label for="class_fday">Day<span>&#42;</span>:</label><br>
+                        <input type="text" id="class_fday" name="class_fday" required><br><br>
+
+                        <label for="class_fsession_length">Session Length (in hours)<span>&#42;</span>:</label><br>
+                        <input type="number" id="class_fsession_length" name="class_fsession_length" required><br><br>
+
+                        <label for="class_fprice">Price<span>&#42;</span>:</label><br>
+                        <input type="number" id="class_fprice" name="class_fprice" required><br><br>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_class" value="Add">
+                <button type="button" class="btn_cancel_class" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+    
+
+        <div class="notification_success_class"></div>
+        <div class="notification_error_class"></div>
+
+
+        <br>
+
+
+
+        <!-- MEMBER CLASS link BLOCK -->
+
+
+        <div class="header_search_member_class"><input type="text" placeholder="Search by Member-Class Link ID" id="search_member_class"></div>
+        <div class="outer_options_member_class">
+            <div id="options_member_class_member"></div>
+            <span id="options_member_class_classes"></span>
+        </div>
+
+        <div class="notification_success_delete_member_class"></div>
+
+        <!-- handle form for update order -->
+        <div class="div_form_update_member_class" style="display: none;">
+            
+            <form id="form_update_member_class" action="./assignment-07.html">
+                <div class="flex-container">
+
+                    <div>
+                        <label for="member_class_fmember_id_update">Member ID<span>&#42;</span>:</label><br>
+                        <input type="text" id="member_class_fmember_id_update" name="member_class_fmember_id_update" disabled required><br><br>
+
+                        <br>
+
+                        <div><b>Class 1</b></div>
+                        <div id="class_cluster_update_0"></div>
+
+                        <div><b>Class 2</b></div>
+                        <div id="class_cluster_update_1"></div>
+
+                        <div><b>Class 3</b></div>
+                        <div id="class_cluster_update_2"></div>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_update_member_class" value="Update">
+                <button type="button" class="btn_cancel_update_member_class" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+
+        <div class="notification_success_update_member_class"></div>
+        <div class="notification_error_update_member_class"></div>
+
+
+        <br>
+
+        <button class="btn_add_new_member_class" style="display: block;">Add New Member Class Link</button>
+
+        <br>
+
+
+        <!-- handle form for add member class link -->
+        <div class="div_form_member_class" style="display: none;">
+            
+            <form id="form_add_new_member_class" action="./assignment-07.html">
+                <div class="flex-container">
+
+                    <div>
+                        <div><b>Members</b></div>
+                        <div id="members_add"></div>
+
+                        <br>
+
+                        <div><b>Class 1</b></div>
+                        <div id="class_cluster_0"></div>
+
+                        <div><b>Class 2</b></div>
+                        <div id="class_cluster_1"></div>
+
+                        <div><b>Class 3</b></div>
+                        <div id="class_cluster_2"></div>
+
+
+                    </div>
+
+                </div>
+
+                <br>
+                <input type="submit" class="btn_add_member_class" value="Add">
+                <button type="button" class="btn_cancel_member_class" onclick="window.history.back();">Cancel</button>
+
+            </form>
+            
+        </div>
+    
+
+        <div class="notification_success_member_class"></div>
+        <div class="notification_error_member_class"></div>
+
+
+        <br>
+
+        <h3>Complete Member-Class Link Database</h3>
+        <table class="table">
+            <thead class="theaders"></thead>
+            <tbody class="tbody"></tbody>
+        </table>
+
+
+    </body>
+</html>

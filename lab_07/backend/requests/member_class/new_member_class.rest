@@ -1,0 +1,17 @@
+POST http://localhost:8000/api/members_classes
+Content-Type: application/json
+
+{
+    "member_ID": "663a08004371e005d1894752",
+    "taken_classes": [
+        {
+            "class_ID": "663a08014371e005d1894766"
+        },
+        {
+            "class_ID": "663a08014371e005d189476a"
+        },
+        {
+            "class_ID": "663a08014371e005d189476d"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+PUT http://localhost:8000/api/classes/class/1
+Content-Type: application/json
+
+{
+    "name": "update",
+    "day": "Friday",
+    "session_length": 3,
+    "price": 90,
+    "number_of_members": 0
+}

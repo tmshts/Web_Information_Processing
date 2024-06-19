@@ -1,0 +1,10 @@
+PUT http://localhost:8000/api/members/member/4
+Content-Type: application/json
+
+{
+    "title": "Mx",
+    "first_name": "delete",
+    "surname": "delete",
+    "email": "eva.delete@yahoo.com",
+    "premium_membership": false
+}

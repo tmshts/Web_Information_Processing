@@ -1,0 +1,1 @@
+GET http://localhost:8000/api/members_classes/member_class/objectID/66389ae41fbd4e10deda86b1
