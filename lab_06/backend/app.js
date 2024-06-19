@@ -6,6 +6,9 @@ const express = require('express');
 const mongoose = require('mongoose')
 //const cors = require('cors');
 
+const config = require('./utils/config')
+
+
 // Creates the app
 const app = express();
 
@@ -14,10 +17,8 @@ const app = express();
 app.use(express.json())
 //app.use(cors())
 
-MONGODB_URI='mongodb+srv://tmshts:tmshts@store.dddy5dv.mongodb.net/gym?retryWrites=true&w=majority&appName=gym'
 // hide URL path for security reasons
-//const mongoUrl = config.MONGODB_URI
-const mongoUrl = MONGODB_URI
+const mongoUrl = config.MONGODB_URI
 console.log('connecting to', mongoUrl)
 
 // add middlewares
@@ -36,7 +37,7 @@ mongoose.connect(mongoUrl)
 
 /////// YOU CAN RUN THIS APP ONLY ONCE BECAUSE I DATA ARE HARD-CRAFTED  //////////
 // If you want to keep running this app just delete or comment the function run() below.
-run();
+//run();
 //Promise.allSettled([run()]);
 
 async function run() {

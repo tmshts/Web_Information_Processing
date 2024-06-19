@@ -6,6 +6,8 @@ const express = require('express');
 const mongoose = require('mongoose')
 const cors = require('cors');
 
+const config = require('./utils/config')
+
 // Creates the app
 const app = express();
 
@@ -14,9 +16,10 @@ app.use(cors())
 app.use(express.json())
 
 
-MONGODB_URI='mongodb+srv://tmshts:tmshts@store.dddy5dv.mongodb.net/gym_7?retryWrites=true&w=majority&appName=gym_7'
-const mongoUrl = MONGODB_URI
+// hide URL path for security reasons
+const mongoUrl = config.MONGODB_URI
 console.log('connecting to', mongoUrl)
+
 
 // add middlewares
 app.use('/api/members', memberRouter);

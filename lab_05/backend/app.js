@@ -39,7 +39,7 @@ mongoose.connect(mongoUrl)
 
 /////// YOU CAN RUN THIS APP ONLY ONCE BECAUSE I SET COLUMNS mobile and email (in customers), and model (in items) UNIQUE  //////////
 // If you want to keep running this app just delete or comment the function runCustomers() below.
-run();
+//run();
 //Promise.allSettled([run()]);
 
 async function run() {
